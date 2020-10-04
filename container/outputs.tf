@@ -1,5 +1,5 @@
 # Output name and ip address
-output "IP Address" {
+output "ip" {
   value = "${docker_container.container_id.ip_address}"
 }
 
