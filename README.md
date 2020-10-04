@@ -44,3 +44,9 @@ A way to manage two deployments from the same directory using different states/s
 ## terraform.tfvars file ##
 
 This file contains the variable content, sensitive data like AWS keys or SSH keys make this file very important and it requires to be protected. In this repository terraform.tfvars was not added but you can rename terraform.tfvars.sample to use this lab
+
+## Null Resources and Local-Exec ##
+
+We utilize a "Null Resource" in order to perform local commands on our machine without having to deploy extra resources.
+
+Do not forget to run ````terraform init```` once you add any new resource such as "Null Resource" 
