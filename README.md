@@ -8,3 +8,29 @@ Ubuntu 16.04.7 LTS
 Install Terraform v0.11.5
 
 Install docker-ce 18.06.1~ce~3-0~ubuntu
+
+## Terraform cheat sheet ##
+
+- Generates an execution plan
+````terraform plan````
+- Apply the changes in the current directory
+````terraform apply````
+- Show the current state in a readable way
+````terraform show````
+- Start interactive console to type interpolations and inspect their values
+````terraform console````
+- Environment variables can be used to set variables TF_VAR_name
+````export TF_VAR_env = prod````
+- Delete environment variable
+````unset TF_VAR_env````
+
+What are workspaces ?
+
+A way to manage two deployments from the same directory using different states/state files.
+
+- Create a workspace
+````terraform workspace new workspace_name````
+- Select the new workspace
+````terraform workspace select workspace_name````
+- Select default workspace
+````terraform workspace select default````
