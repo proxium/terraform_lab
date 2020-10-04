@@ -40,3 +40,7 @@ A way to manage two deployments from the same directory using different states/s
 ````terraform workspace select workspace_name````
 - Select default workspace
 ````terraform workspace select default````
+
+## terraform.tfvars file ##
+
+This file contains the variable content, sensitive data like AWS keys or SSH keys make this file very important and it requires to be protected. In this repository terraform.tfvars was not added but you can rename terraform.tfvars.sample to use this lab
