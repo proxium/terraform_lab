@@ -5,7 +5,7 @@ This repository is a test lab for Terraform
 
 Ubuntu 16.04.7 LTS
 
-Install Terraform v0.11.5
+Install Terraform v0.12
 
 Install docker-ce 18.06.1~ce~3-0~ubuntu
 
