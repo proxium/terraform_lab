@@ -6,6 +6,12 @@ This repository is a test lab for Terraform
 Ubuntu 16.04.7 LTS
 
 Install Terraform v0.12
+````curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+````sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+````sudo apt-get update
+````sudo apt policy terraform
+````sudo apt install terraform=0.12.29
+````terraform -install-autocomplete
 
 Install docker-ce 18.06.1~ce~3-0~ubuntu
 
